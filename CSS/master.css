@@ -200,4 +200,16 @@ ul {
     bottom: 30px;
     display: flex;
 }
+.landing .bullets li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.landing .bullets li:active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
 /* end landing */
