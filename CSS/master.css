@@ -171,6 +171,14 @@ ul {
 .landing .text .content {
     max-width: 500px;
 }
+@media (max-width: 767px) {
+    .landing .text {
+        width: 100%;
+    }
+    .landing .text .content {
+        max-width: 100%;
+    }
+}
 .landing .text .content h2 {
     font-size: 32px;
     font-weight: normal;
@@ -186,6 +194,11 @@ ul {
     top: 50%;
     transform: translateY(-50%);
     color: #ddd;
+}
+@media (max-width: 767px) {
+    .landing .change-background {
+        display: none;
+    }
 }
 .landing .fa-angle-left {
     left: 30px;
