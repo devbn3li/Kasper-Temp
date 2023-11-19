@@ -3,6 +3,7 @@
     /* --main-color: #19c8fa; */
     --main-color: #00C7FC;
 }
+
 /* end variables */
 /* start global rules */
 * {
@@ -10,49 +11,105 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
 }
+
 ul {
     list-style: none;
 }
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 /* small screan  */
 @media (min-width: 768px) {
     .container {
         width: 750px;
     }
 }
+
 /* medium screan */
 @media (min-width: 992px) {
     .container {
         width: 970px;
     }
 }
+
 /* larg screan */
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
 }
+
 /* end global rules */
+
+/* Start Components */
+
+.main-heading {
+    text-align: center;
+}
+
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.main-heading h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 120px;
+    background-color: #333;
+    bottom: -30px;
+}
+
+.main-heading h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -38px;
+    background-color: white;
+}
+
+.main-heading p {
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+}
+
+/* End Components */
+
 /* start header */
-/* .header {} */
 .header {
     position: absolute;
     left: 0;
     width: 100%;
     z-index: 2;
 }
+
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -60,6 +117,7 @@ ul {
     position: relative;
     min-height: 97px;
 }
+
 .header .container::after {
     content: "";
     position: absolute;
@@ -69,27 +127,33 @@ ul {
     width: calc(100% - 30px);
     left: 15px;
 }
+
 .header .logo img {
     height: 40px;
 }
+
 .header nav {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: end;
 }
+
 .header nav .toggle-menu {
     color: white;
     font-size: 22px;
 }
+
 @media (min-width: 768px) {
     .header nav .toggle-menu {
         display: none;
     }
 }
+
 .header nav ul {
     display: flex;
 }
+
 @media (max-width: 767px) {
     .header nav ul {
         display: none;
@@ -109,6 +173,7 @@ ul {
         padding: 15px !important;
     }
 }
+
 .header nav ul li a {
     padding: 40px 10px;
     display: block;
@@ -119,11 +184,13 @@ ul {
     position: relative;
     z-index: 3;
 }
+
 .header nav ul li a.active,
 .header nav ul li a:hover {
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
 }
+
 .header nav .form {
     width: 40px;
     height: 30px;
@@ -131,6 +198,7 @@ ul {
     margin-left: 30px;
     border-left: 1px solid white;
 }
+
 .header nav .form i {
     color: white;
     position: absolute;
@@ -139,6 +207,7 @@ ul {
     transform: translateY(-50%);
     right: 0;
 }
+
 /* end header */
 /* start landing */
 .landing {
@@ -148,6 +217,7 @@ ul {
     background-size: cover;
     position: relative;
 }
+
 .landing .overlay {
     position: absolute;
     left: 0;
@@ -156,6 +226,7 @@ ul {
     height: 100%;
     background-color: rgb(0, 0, 0 / 60%);
 }
+
 .landing .text {
     position: absolute;
     left: 0;
@@ -168,44 +239,54 @@ ul {
     display: flex;
     justify-content: flex-end;
 }
+
 .landing .text .content {
     max-width: 500px;
 }
+
 @media (max-width: 767px) {
     .landing .text {
         width: 100%;
     }
+
     .landing .text .content {
         max-width: 100%;
     }
 }
+
 .landing .text .content h2 {
     font-size: 32px;
     font-weight: normal;
     line-height: 1.5;
     margin-bottom: 20px;
 }
+
 .landing .text .content p {
     font-size: 14px;
     line-height: 2;
 }
+
 .landing .change-background {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: #ddd;
 }
+
 @media (max-width: 767px) {
     .landing .change-background {
         display: none;
     }
 }
+
 .landing .fa-angle-left {
     left: 30px;
 }
+
 .landing .fa-angle-right {
     right: 30px;
 }
+
 .landing .bullets {
     position: absolute;
     left: 50%;
@@ -213,6 +294,7 @@ ul {
     bottom: 30px;
     display: flex;
 }
+
 .landing .bullets li {
     width: 20px;
     height: 20px;
@@ -220,7 +302,8 @@ ul {
     border-radius: 50%;
     margin-right: 10px;
 }
-.landing .bullets li:active {
+
+.landing .bullets li.active {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
