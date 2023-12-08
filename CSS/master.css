@@ -461,6 +461,13 @@ ul {
     overflow: hidden;
 }
 
+.portfolio .imgs-container .box:hover .caption {
+    bottom: 0;
+}
+.portfolio .imgs-container .box:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+
 @media (min-width: 768px) {
     .portfolio .imgs-container .box {
         flex-basis: 50%;
@@ -474,6 +481,7 @@ ul {
 
 .portfolio .imgs-container .box img {
     max-width: 100%;
+    transition: 0.3s;
 }
 
 .portfolio .imgs-container .box .caption {
@@ -483,5 +491,6 @@ ul {
     background-color: white;
     width: 100%;
     transition: 0.3s;
+    bottom: -100%;
 }
 /* End Portfolio */
