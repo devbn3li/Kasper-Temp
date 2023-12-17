@@ -1,9 +1,9 @@
 /* start variables */
 :root {
     /* --main-color: #19c8fa; */
-    --main-color: #00C7FC;
+    --main-color: #19c8fa;
     --section-padding: 100px;
-    --transparant-color: rgba(0, 169, 247, 0.33);
+    --transparant-color: rgb(15 116 143 / 70%);
 }
 
 /* end variables */
@@ -12,6 +12,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -399,7 +401,6 @@ ul {
 }
 
 .design .image img {
-    width: 100%;
     position: relative;
     bottom: -150px;
 }
