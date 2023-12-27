@@ -284,19 +284,29 @@ ul {
 }
 
 .landing .fa-angle-left {
-    left: 30px;
+  left: 30px;
+}
+
+.landing .fa-angle-left:hover {
+  left: 28px;
+  cursor: pointer;
 }
 
 .landing .fa-angle-right {
-    right: 30px;
+  right: 30px;
+}
+
+.landing .fa-angle-right:hover {
+  right: 28px;
+  cursor: pointer;
 }
 
 .landing .bullets {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 30px;
-    display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  display: flex;
 }
 
 .landing .bullets li {
