@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kasper template</title>
     <!-- main temp css file -->
-    <link rel="stylesheet" href="./CSS/master.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <!-- render all elements normally -->
     <link rel="stylesheet" href="./CSS/normalize.css">
     <!-- font awesome library -->
@@ -432,12 +432,57 @@
       <div class="container">
         <form>
           <i class="far fa-envelope fa-lg"></i>
-          <input type="email" name="mail">
+          <input type="email" name="mail" placeholder="Your Email">
           <input type="submit" value="Subscribe">
         </form>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla nihil obcaecati dolorum aspernatur animi quaerat</p>
       </div>
     </div>
     <!-- end subscribe -->
+    <!-- start contact -->
+    <div id="contact" class="contact">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="content">
+          <form>
+            <input class="main-input" type="text" name="name" placeholder="Your Name">
+            <input class="main-input" type="email" name="mail" placeholder="Your Email">
+            <textarea name="message" class="main-input" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message">
+          </form>
+          <div class="info">
+            <h4>Get in touch</h4>
+            <span class="phone">+00 123.456.789</span>
+            <span class="phone">+00 123.456.789</span>
+            <h4>Where we are</h4>
+            <address>
+              Awesome Address 17<br>
+              New Yourk, NYC<br>
+              123-4567-890<br>
+              USA
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <img src="./images/logo.png" alt="logo">
+        <p>We are social</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fas fa-home"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <p class="copyright">&copy; 2023 <span>Kasper</span> All Right Reserved</p>
+      </div>
+    </footer>
+    <!-- end footer -->
   </body>
 </html>
